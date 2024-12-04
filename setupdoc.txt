@@ -1,0 +1,24 @@
+Creates a new Conda environment for our project named medai with Python 3.11.9
+
+1. Create Conda Environment
+
+"conda create -n medai python=3.11.9"
+
+Creates a new Conda environment named medai-system with Python 3.11.
+
+2. Activate the Environment
+
+"conda activate medai-system"
+
+Activates the medai-system environment to start using it.
+
+3. Install Dependencies from requirements.txt
+
+"pip install -r requirements.txt"
+
+Installs all required packages listed in the requirements.txt file into the active environment.
+
+requirements.txt: A file that contains a list of dependencies (libraries and their versions) that need to be installed in the environment.
+
+IMPORTANT
+Any change on the requirements.txt should be highlighted and all teammates should stay updated with their environment 
