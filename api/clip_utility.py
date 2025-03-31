@@ -1,7 +1,7 @@
 import torch 
 import clip
 from PIL import Image
-device = 'mps' if torch.backends.mps.is_available else 'cpu'
+device = torch.device('cpu')
 
 class CLIP_Prompt: 
     clip_model = None

@@ -3,8 +3,7 @@ import torch
 import clip
 from PIL import Image
 print("import is completed")
-device = 'mps' if torch.backends.mps.is_available else 'cpu'
-print(device)
+device = torch.device('cpu')
 clip_model,preprocess = clip.load('ViT-B/32',device=device) 
 
 def get_prompt(img,text_prompts,clip_model,device):
@@ -23,7 +22,7 @@ def get_prompt(img,text_prompts,clip_model,device):
     return best_match 
 
 #reading the image from the folder - later this would be dynamically created. 
-image_path = "pexels-pixabay-45201.jpg"
+image_path = "api/chestxrayPnemonia.png"
 img = Image.open(image_path) 
 
 #setting up the text prompt - here 
@@ -39,4 +38,4 @@ genai.configure(api_key='AIzaSyD5ayo_ZGg31JxjIuCT9nf-ZKZwuHgHUbQ')
 #configuring the model 
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 response = model.generate_content(prompt)
-print(response) 
+print(str(response.parts[0].text)) 

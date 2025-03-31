@@ -12,6 +12,8 @@ app = Flask(__name__)
 
 #initializing the custom clip module. 
 clip_model = CLIP_Prompt()
+device = torch.device("cpu")
+
 
 @app.route('/getresponse',methods=['POST'])
 def responseFromGeminiFlash():
