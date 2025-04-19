@@ -14,7 +14,7 @@ medpy
 # Deep Learning Frameworks
 torch
 torchvision
-tensorflow
+#tensorflow
 keras
 
 # Natural Language Processing
@@ -52,3 +52,6 @@ monai
 streamlit
 open-clip-torch
 faiss-cpu
+accelerate
+sacremoses
+google-generativeai
