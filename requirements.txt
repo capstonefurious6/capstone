@@ -1,49 +1,57 @@
 # Core Libraries
-numpy==1.24.3
-pandas==1.5.3
-scipy==1.11.2
-matplotlib==3.7.2
-scikit-learn==1.2.2
+numpy
+pandas
+scipy
+matplotlib
+scikit-learn
 
 # Medical Image Processing
-nibabel==5.1.0
-pydicom==2.4.1
-SimpleITK==2.2.1
-medpy==0.4.0
+nibabel
+pydicom
+SimpleITK
+medpy
 
 # Deep Learning Frameworks
-torch==2.0.1
-torchvision==0.15.2
-tensorflow==2.14.0
-keras==2.14.0
+torch
+torchvision
+#tensorflow
+keras
 
 # Natural Language Processing
-spacy==3.6.1
-nltk==3.9
-transformers==4.33.2
+spacy
+nltk
+transformers
 
 # Image Processing and Augmentation
-opencv-python==4.8.0.74
-albumentations==1.3.1
+opencv-python
+albumentations
 
 # Utilities and Development Tools
-jupyterlab==4.0.5
-ipykernel==6.25.2
-tqdm==4.65.0
-seaborn>=0.12.2
+jupyterlab
+ipykernel
+tqdm
+seaborn
 
 # Experiment Tracking
-mlflow==2.7.1
+mlflow
 
 # Data Security
-cryptography==41.0.3
+cryptography
 
 # API Development
-fastapi==0.100.0
-uvicorn==0.23.0
+fastapi
+uvicorn
 
 # Deployment
-docker==6.1.3
+docker
 
 # Medical AI utilities
-monai==1.1.0
+monai
+
+# UI
+streamlit
+open-clip-torch
+faiss-cpu
+accelerate
+sacremoses
+google-generativeai
